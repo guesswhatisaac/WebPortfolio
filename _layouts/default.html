@@ -1,3 +1,23 @@
-<h1>This is giraffe...</h1>
+<head>
+    <title> {{ page.title }} </title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+</head>
 
-{{ content }}
+<body>
+    <div id="index-container">
+        <div id="top-panel">
+            {% include topPanel.html %}
+        </div>
+        <div id="sidebar-panel">
+            {% include sidePanel.html %}
+        </div>
+        <div id="main-panel">
+            {% include mainPanel.html %}
+        </div>
+        <div id="bottom-panel">
+            {% include bottomPanel.html %}
+        </div>
+    </div>
+
+</body>
+</html>
