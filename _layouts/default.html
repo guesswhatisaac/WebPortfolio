@@ -4,21 +4,15 @@
 </head>
 
 <body>
-    <h1>UPDATED</h1>
     <div id="index-container">
-        <div id="top-panel">
-            {% include topPanel.html %}
+        <div id="header-panels">
+            <div class="explorer">{% include explorer.html %}</div>
+            <div class="top-panel">{% include topPanel.html %}</div>
         </div>
-        <div id="sidebar-panel">
-            {% include sidePanel.html %}
+        <div id="body-panels">
+            <div class="sidebar-panel">{% include sidePanel.html %}</div>
+            <div class="main-panel">{% include mainPanel.html %}</div>
         </div>
-        <div id="main-panel">
-            {% include mainPanel.html %}
-        </div>
-        <div id="bottom-panel">
-            {% include bottomPanel.html %}
-        </div>
+        <div class="bottom-panel">{% include bottomPanel.html %}</div>
     </div>
-
 </body>
-</html>
