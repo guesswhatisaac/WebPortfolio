@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Inconsolata";
 }
 
 #index-container {
@@ -16,18 +18,17 @@ html, body {
 // ------- HEADER ---------
 
 #header-panels {
-  height: 60px;
+  height: 50px;
   width: 100%;
   display: flex;
   position: relative;
 }
 
 .explorer {
-  width: 200px;
-  min-width: 150px;
+  width: 280px;
   background: #05021B;
   align-self: center; // y axis align center
-  justify-items: center; // x axis align center
+  //justify-items: center; // x axis align center
 }
 
 
@@ -43,15 +44,17 @@ html, body {
 // ------- BODY ---------
 
 #body-panels {
-  flex: 1;
   display: flex;
   position: relative;
   overflow: hidden;
+  flex: 1;
+  width: 100%;
+
 }
 
 .sidebar-panel {
-  width: 200px;
-  min-width: 150px;
+  width: 280px;
+  //padding: 20px;
   background: #05021B;
   z-index: 3;
   justify-items: center; // x axis align center
@@ -59,6 +62,7 @@ html, body {
 
 .main-panel {
   flex: 1;
+  /* padding: 20px; */
   background: #020D21;
   z-index: 1;
   overflow-y: auto;
@@ -72,26 +76,6 @@ html, body {
   height: 30px;
   background: #0B062F;
   z-index: 1;
-  overflow: hidden; 
-  justify-content: left;
-  justify-items: center;
-  justify-self: center;
 
-}
 
-/* Responsiveness */
-@media (max-width: 768px) {
-  #layout-body {
-      flex-direction: column;
-  }
-
-  #sidebar-panel {
-      width: 100%;
-      height: auto;
-      order: 1;
-  }
-
-  #main-panel {
-      order: 2;
-  }
 }
