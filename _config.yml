@@ -1,9 +1,12 @@
 # Site/Global settings
 ignore_theme_config: true
+#repository: guesswhatisaac/guesswhatisaac.github.io
+#author: Isaac Nathan Roman
 
 
 # Build settings
-#baseurl: https://guesswhatisaac.github.io//
+#baseurl: "/guesswhatisaac.github.io"
+
 sass:
   sass_dir: _sass
   
