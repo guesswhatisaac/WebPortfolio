@@ -11,7 +11,11 @@
         </div>
         <div id="body-panels">
             <div class="sidebar-panel">{% include sidePanel.html %}</div>
-            <div class="main-panel">{% include mainPanel.html %}</div>
+            
+            <div class="main-panel">
+                {{ content }}
+              </div>
+
         </div>
         <div class="bottom-panel">{% include bottomPanel.html %}</div>
     </div>
